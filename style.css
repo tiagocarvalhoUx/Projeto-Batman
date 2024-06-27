@@ -164,7 +164,7 @@ header {
 @media screen and (max-width: 768px) {
   .logo {
     align-items: center;
-    margin-left: 150px;
+    margin-left: 130px;
     margin-top: 15px;
   }
   .header-content {
@@ -377,6 +377,20 @@ button:hover, form .btn-enviar input:hover {
     background-image: url(/assets/Fotos/batman-contato1.avif);
   }
 }
+.bg {
+  background: black;
+}
+
+.text-center {
+  color: red;
+  font-size: 20px;
+}
+
+.text-center1 {
+  color: red;
+  font-size: 35px;
+}
+
 body {
   font-family: "Kdam Thmor Pro", sans-serif;
   width: 100%;
