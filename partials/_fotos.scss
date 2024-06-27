@@ -11,9 +11,6 @@ body{
     background-color: black;
 }
 
-
-
-
  .gallery{
     width: 100%;
     margin-top: 20px;
@@ -59,7 +56,7 @@ body{
 }
 
 span{
-    margin-top: 150px;
+   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,16 +65,15 @@ span{
     font-family: 'Kdam Thmor Pro', sans-serif;
 }
 @media screen and (max-width: 768px){
-   header{
-    margin-top: 800px;
-   }
+ 
     .gallery-items{
 
         flex-direction:column;
         width: 80%;
         padding: 5px;
-        margin: auto;
-        gap: 100px;
-       
     }
 }
+     
+        
+       
+    

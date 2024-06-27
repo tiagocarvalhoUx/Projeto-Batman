@@ -142,29 +142,7 @@ header {
   }
   
   
-  
-  .foto01 {
-    width:400px;
-    height:300px;
-    border:1px solid rgba(14, 13, 13, 0.925);
-    box-shadow: 1px 1px 4px #000;
-    cursor:pointer;
-    
-    
-    
-  }
-  
-  .foto01:hover{
-  border:3px solid rgba(250, 242, 242, 0.925);
-  zoom: 110%;    
-  }
-  
-  /*formataçao de imagens com legendas */
-  
-  .foto01 figcaption {
-     position: absolute;
-     top:0px;
-  }
+ 
   
   a {
     cursor: pointer;
