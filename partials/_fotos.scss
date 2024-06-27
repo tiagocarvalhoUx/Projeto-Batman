@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family= Kdam+Thmor+Pro & display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+   
+
+body{
+    background-color: black;
+}
+
+
+
+
+ .gallery{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    color:$red-dark;
+   
+}
+
+.gallery-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 5vw;
+    padding: 0 2vw;
+   
+}
+
+.gallery-items{
+    width: 250px;
+    height: 180px;
+    
+    filter: grayscale(100%);
+    transition: transform .5s linear;
+}
+.gallery-items img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 8px solid $white-light;
+    box-shadow: 5px 5px 5px $black-light;
+    flex-grow: 2; 
+    margin-top: 100px;
+}
+.gallery-items:hover{
+    transform: scale(1.3);
+    
+    filter: none;
+}
+
+span{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white-dark;
+    font-style: italic;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+@media screen and (max-width: 768px){
+   header{
+    margin-top: 800px;
+   }
+    .gallery-items{
+
+        flex-direction:column;
+        width: 80%;
+        padding: 5px;
+        margin: auto;
+        gap: 100px;
+       
+    }
+}
