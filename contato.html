@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contatos</title>
+    <link rel="stylesheet" href="./style.css">
    <link rel="stylesheet" href="./style.scss">
-   <link rel="stylesheet" href="./style.css">
    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet"/>
    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
    <script src="/man.js"></script>
@@ -33,15 +33,18 @@
             <input type="text" class="form-control rounded border-white mb-3 form-input" id="fullName" name="nome" placeholder="Digite seu nome..." required>
           </div>
           <div>
+            <input type="text" class="form-control rounded border-white mb-3 form-input" id="subject" name="nome" placeholder="Subject..." required>
+          </div>
+          <div>
             <input type="email" class="form-control rounded border-white mb-3 form-input" id="email_id" name="email" placeholder="E-mail">
           </div>
           <div>
             <textarea id="message" class="form-control rounded border-white mb-3 form-text-area" id="message" name="message" rows="5" cols="30" placeholder="Mensagem" required></textarea>
           </div>
           <div class="btn-enviar">
-            <input type="submit" value="Enviar">
+            <input type="submit" value="Enviar" onclick="SendMail()">
           </div>
-          <input type="button" value="Voltar" onclick="SendMail()">
+          <input class="btn-enviar2" type="button" value="Voltar" onClick="history.go(-1)">
         </form>
       </div>
     </div>

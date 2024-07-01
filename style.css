@@ -278,14 +278,19 @@ a {
 
 .title {
   font-size: 35px;
-  color: aliceblue;
+  color: #edeaef;
+  margin-left: auto;
 }
 
 .description-form {
-  font-size: 20px;
+  font-size: 25px;
   color: #D21617;
   font: bold;
-  margin-top: 40px;
+  margin-top: 20px;
+  text-align: center;
+  margin-left: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 .formulario {
@@ -317,29 +322,29 @@ form {
 }
 
 form input, form textarea {
-  width: 100%;
+  width: 140%;
   background-color: rgba(153, 153, 153, 0.344);
   border: 0;
-  padding: 5px 5px;
-  border-radius: 10px;
+  padding: 8px 8px;
+  border-radius: 15px;
   color: #edeaef;
   font-size: 15px;
 }
 
 form input::-moz-placeholder {
-  color: #d34040;
+  color: #D21617;
 }
 
 form input::placeholder {
-  color: #d34040;
+  color: #D21617;
 }
 
 textarea::-moz-placeholder {
-  color: #d34040;
+  color: #D21617;
 }
 
 textarea::placeholder {
-  color: #d34040;
+  color: #D21617;
 }
 
 form textarea {
@@ -350,11 +355,12 @@ form textarea {
 form .btn-enviar {
   margin-top: 10px;
   text-align: center;
+  margin-left: 70px;
 }
 
 form .btn-enviar input[type=submit] {
   color: #edeaef;
-  width: 70%;
+  width: 100%;
   margin: auto;
   background-color: #D21617;
   height: 7vh;
@@ -368,29 +374,83 @@ button:hover, form .btn-enviar input:hover {
   transition: 0.3s;
 }
 
+form .btn-enviar2 {
+  background-color: #06090c;
+}
+
+form .btn-enviar2:hover {
+  box-shadow: 0px 0px 8px #D21617;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
 @media screen and (max-width: 768px) {
   .formulario {
-    width: 120%;
     margin: auto;
-    align-items: center;
-    justify-content: center;
-    background-image: url(/assets/Fotos/batman-contato1.avif);
+  }
+  .description-form {
+    margin-left: 80px;
+  }
+  .title {
+    margin-left: 80px;
+  }
+  form input {
+    width: 300%;
+  }
+  form textarea {
+    width: 300%;
+  }
+  form .btn-enviar {
+    width: 130%;
+  }
+  form .btn-enviar2 {
+    width: 300%;
   }
 }
 .bg {
-  background: black;
+  background: #06090c;
 }
 
 .text-center {
-  color: red;
+  color: #D21617;
   font-size: 20px;
 }
 
 .text-center1 {
-  color: red;
+  color: #D21617;
   font-size: 35px;
 }
 
+.btn2 {
+  background-color: #D21617;
+  padding: 8px 0px;
+  border-radius: 10px;
+  border: 2px solid #D21617;
+  color: #fefbff;
+}
+
+.btn-enviar3 {
+  background-color: #06090c;
+  width: 100%;
+}
+
+.btn-enviar3:hover {
+  box-shadow: 0px 0px 8px #D21617;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+  .text-center1 {
+    font-size: 18px;
+  }
+  .form-label {
+    font-size: 15px;
+  }
+  .bg {
+    width: 80%;
+  }
+}
 body {
   font-family: "Kdam Thmor Pro", sans-serif;
   width: 100%;
