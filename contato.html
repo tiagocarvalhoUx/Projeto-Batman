@@ -8,7 +8,13 @@
    <link rel="stylesheet" href="./style.scss">
    <link rel="stylesheet" href="./style.css">
    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet"/>
-  
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+   <script src="/man.js"></script>
+   <script type="text/javascript">
+       (function (){
+           emailjs.init("RpRHPm6c5dkpZ2Qbr");
+       })();
+   </script>
 </head>
 
 <body>
@@ -19,23 +25,23 @@
          
   
         
-        <form method="post" action="./assets/enviar.php">
+        <form onsubmit="emailSend(); reset(); return false">
           <h5 class="title">Contate nos</h5>
           <p class="description-form">Faça seu cadastro e garanta seu ticket.
           </p>
           <div>
-            <input type="text" class="form-control rounded border-white mb-3 form-input" id="name" name="nome" placeholder="Digite seu nome..." required>
+            <input type="text" class="form-control rounded border-white mb-3 form-input" id="fullName" name="nome" placeholder="Digite seu nome..." required>
           </div>
           <div>
-            <input type="email" class="form-control rounded border-white mb-3 form-input" name="email" placeholder="E-mail">
+            <input type="email" class="form-control rounded border-white mb-3 form-input" id="email_id" name="email" placeholder="E-mail">
           </div>
           <div>
-            <textarea id="message" class="form-control rounded border-white mb-3 form-text-area" name="message" rows="5" cols="30" placeholder="Mensagem" required></textarea>
+            <textarea id="message" class="form-control rounded border-white mb-3 form-text-area" id="message" name="message" rows="5" cols="30" placeholder="Mensagem" required></textarea>
           </div>
           <div class="btn-enviar">
             <input type="submit" value="Enviar">
           </div>
-          <input type="button" value="Voltar" onClick="history.go(-1)">
+          <input type="button" value="Voltar" onclick="SendMail()">
         </form>
       </div>
     </div>
