@@ -74,6 +74,19 @@ span{
     }
 }
      
-        
-       
+.btn-enviar4{
+    width: 400%;
+    padding: 15px 6px;
+    background-color: $secundary-dark;
+    margin-left: -10px;
+    
+}      
+    
+   
+
+.btn-enviar4:hover{
+    box-shadow: 0px 0px 8px $red-dark;
+    transform: scale(1.05);
+    transition: .3s;
+}
     
