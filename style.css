@@ -159,7 +159,7 @@ header {
 .header-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .logo {
@@ -172,9 +172,7 @@ header {
 
 .header-ul {
   margin-top: 30px;
-}
-.header-ul a {
-  padding: 15px 40px;
+  padding: 15px 100px;
 }
 
 @media screen and (max-width: 768px) {
@@ -190,12 +188,13 @@ header {
     width: 100%;
   }
   .header-ul {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    gap: 10px;
-    align-items: center;
-    margin-top: 30px;
+    gap: 1px;
+    text-align: center;
+    gap: 0px;
+    margin-top: 100px;
+  }
+  .header-ul a {
+    margin-top: -80px;
   }
   .header-ul:hover {
     animation: scaleButton 0.8s alternate infinite;
@@ -270,17 +269,6 @@ header {
   color: #D21617;
 }
 
-@media screen and (max-width: 768px) {
-  .header-ul {
-    flex-direction: column;
-    text-align: center;
-    gap: 0px;
-  }
-  .logo {
-    width: 180px;
-    margin-top: 46px;
-  }
-}
 a {
   cursor: pointer;
   text-decoration: none;
