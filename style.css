@@ -163,7 +163,7 @@ header {
 }
 
 .logo {
-  width: 180px;
+  width: 150px;
   border-radius: 30px;
   margin-top: 40px;
   margin-left: 40px;
@@ -172,6 +172,9 @@ header {
 
 .header-ul {
   margin-top: 30px;
+}
+.header-ul a {
+  padding: 15px 40px;
 }
 
 @media screen and (max-width: 768px) {
@@ -190,7 +193,7 @@ header {
     display: flex;
     width: 100%;
     justify-content: center;
-    gap: 100px;
+    gap: 10px;
     align-items: center;
     margin-top: 30px;
   }
@@ -270,12 +273,11 @@ header {
 @media screen and (max-width: 768px) {
   .header-ul {
     flex-direction: column;
-    margin-bottom: 35px;
     text-align: center;
-    gap: 10px;
+    gap: 0px;
   }
-  .header-logo {
-    width: 120px;
+  .logo {
+    width: 180px;
     margin-top: 46px;
   }
 }
