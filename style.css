@@ -177,6 +177,7 @@ header {
 
 @media screen and (max-width: 768px) {
   .logo {
+    width: 180px;
     align-items: center;
     margin-left: 130px;
     margin-top: 15px;
