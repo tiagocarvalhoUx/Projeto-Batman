@@ -285,14 +285,22 @@ a {
   text-decoration: none;
 } 
 * {
-  outline: none;
+  width: 100%;
+  margin: 0;
+  left: 0px;
   font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+body {
+  background-image: url(/assets/Fotos/batman-contato1.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .title {
   font-size: 35px;
   color: #edeaef;
-  margin-left: auto;
+  text-align: center;
 }
 
 .description-form {
@@ -301,28 +309,19 @@ a {
   font: bold;
   margin-top: 20px;
   text-align: center;
-  margin-left: auto;
   align-items: center;
   justify-content: center;
 }
 
 .formulario {
   padding: 80px 40%;
-  background-image: url(/assets/Fotos/batman-contato1.avif);
   content: "";
-  display: block;
+  display: flex;
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 0.9;
-}
-
-.formulario {
-  position: relative;
 }
 
 form {
@@ -334,7 +333,8 @@ form {
   gap: 10px;
 }
 
-form input, form textarea {
+form input,
+form textarea {
   width: 140%;
   background-color: rgba(153, 153, 153, 0.344);
   border: 0;
@@ -373,15 +373,16 @@ form .btn-enviar {
 
 form .btn-enviar input[type=submit] {
   color: #edeaef;
-  width: 100%;
-  margin: auto;
+  width: 140%;
+  margin-left: -35%;
   background-color: #D21617;
   height: 7vh;
   font-weight: 700;
   cursor: pointer;
 }
 
-button:hover, form .btn-enviar input:hover {
+button:hover,
+form .btn-enviar input:hover {
   box-shadow: 0px 0px 8px #D21617;
   transform: scale(1.05);
   transition: 0.3s;
@@ -398,26 +399,37 @@ form .btn-enviar2:hover {
 }
 
 @media screen and (max-width: 768px) {
-  .formulario {
-    margin: auto;
-  }
   .description-form {
-    margin-left: 80px;
+    text-align: center;
+    text-shadow: 2px 2px #edeaef;
+    margin-bottom: 30px;
   }
   .title {
-    margin-left: 80px;
+    text-shadow: 2px 2px 25px #D21617;
+    text-align: center;
   }
   form input {
-    width: 300%;
+    width: 400%;
+    margin-left: -120px;
+    text-align: center;
   }
-  form textarea {
-    width: 300%;
+  .form-control-ms {
+    width: 400%;
+    height: 150px;
+    margin-left: -120px;
+  }
+  .form-control {
+    margin-bottom: 10px;
   }
   form .btn-enviar {
-    width: 130%;
+    width: 290%;
+    margin-left: -40px;
+    margin-bottom: 30px;
   }
   form .btn-enviar2 {
-    width: 300%;
+    width: 400%;
+    margin-left: -130px;
+    margin-bottom: 30px;
   }
 }
 .bg {

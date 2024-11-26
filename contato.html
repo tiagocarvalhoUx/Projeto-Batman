@@ -1,53 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contatos</title>
-    <link rel="stylesheet" href="./style.css">
-   <link rel="stylesheet" href="./style.scss">
-   <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet"/>
-   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-   <script src="/man.js"></script>
-   <script type="text/javascript">
-       (function (){
-           emailjs.init("RpRHPm6c5dkpZ2Qbr");
-       })();
-   </script>
-</head>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style.scss" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script src="/man.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("RpRHPm6c5dkpZ2Qbr");
+      })();
+    </script>
+  </head>
 
-<body>
-      
-    <div>
-     
+  <body>
+    <div class="container-form">
       <div class="formulario">
-         
-  
-        
         <form onsubmit="emailSend(); reset(); return false">
           <h5 class="title">Contate nos</h5>
-          <p class="description-form">Faça seu cadastro e garanta seu ticket.
+          <p class="description-form">
+            Faça seu cadastro e garanta seu ticket.
           </p>
           <div>
-            <input type="text" class="form-control rounded border-white mb-3 form-input" id="fullName" name="nome" placeholder="Digite seu nome..." required>
+            <input
+              type="text"
+              class="form-control"
+              id="fullName"
+              name="nome"
+              placeholder="Digite seu nome..."
+              required
+            />
           </div>
           <div>
-            <input type="text" class="form-control rounded border-white mb-3 form-input" id="subject" name="nome" placeholder="Subject..." required>
+            <input
+              type="text"
+              class="form-control"
+              id="subject"
+              name="nome"
+              placeholder="Subject..."
+              required
+            />
           </div>
           <div>
-            <input type="email" class="form-control rounded border-white mb-3 form-input" id="email_id" name="email" placeholder="E-mail">
+            <input
+              type="email"
+              class="form-control"
+              id="email_id"
+              name="email"
+              placeholder="E-mail"
+            />
           </div>
           <div>
-            <textarea id="message" class="form-control rounded border-white mb-3 form-text-area" id="message" name="message" rows="5" cols="30" placeholder="Mensagem" required></textarea>
+            <textarea
+              id="message"
+              class="form-control-ms"
+              id="message"
+              name="message"
+              placeholder="Mensagem"
+              required
+            ></textarea>
           </div>
           <div class="btn-enviar">
-            <input type="submit" value="Enviar" onclick="SendMail()">
+            <input type="submit" value="Enviar" onclick="SendMail()" />
           </div>
-          <input class="btn-enviar2" type="button" value="Voltar" onClick="history.go(-1)">
+          <input
+            class="btn-enviar2"
+            type="button"
+            value="Voltar"
+            onClick="history.go(-1)"
+          />
         </form>
       </div>
     </div>
-  
-</body>
+  </body>
 </html>
