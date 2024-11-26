@@ -1,44 +1,38 @@
 header {
-    width: 100%;
-    background-color: black;
-  }
-  .header-content{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-.logo{
-    width: 180px;
-    border-radius: 30px;
-    margin-top: 40px;
-    margin-left: 40px;
-    transition: 0.8s;
+  width: 100%;
+  background-color: black;
+}
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-    
-.header-ul{
-    margin-top: 30px;
+.logo {
+  width: 180px;
+  border-radius: 30px;
+  margin-top: 40px;
+  margin-left: 40px;
+  transition: 0.8s;
 }
-  
 
-  
-  @media screen and (max-width: 768px) {
-  .logo{
+.header-ul {
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
     align-items: center;
     margin-left: 130px;
     margin-top: 15px;
   }
-  .header-content{
+  .header-content {
     width: 100%;
-    
   }
   .header-nav {
     width: 100%;
-    
   }
- 
-  
+
   .header-ul {
     display: flex;
     width: 100%;
@@ -47,11 +41,11 @@ header {
     align-items: center;
     margin-top: 30px;
   }
-  
+
   .header-ul:hover {
     animation: scaleButton 0.8s alternate infinite;
   }
-  
+
   @keyframes scaleButton {
     from {
       transform: scale(1);
@@ -67,91 +61,78 @@ header {
     font-size: 19px;
     transition: 0.5s;
   }
-  
+
   .header-li:hover {
     color: $red-dark;
   }
-  
-    .header-ul {
-      width: 100%;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-    }
-   
-   
-  }
-  
-  
-  .header-logo {
-    width: 150px;
-    border-radius: 30px;
-    margin-top: 40px;
-    margin-left: 40px;
-    transition: 0.8s;
-  }
-  
-  .header-nav {
-    width: 100%;
-  }
-  
+
   .header-ul {
-    display: flex;
     width: 100%;
-    justify-content: center;
-    gap: 100px;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 10px;
   }
-  
-  .header-ul:hover {
-    animation: scaleButton 0.8s alternate infinite;
-  }
-  
-  @keyframes scaleButton {
-    from {
-      transform: scale(1);
-    }
-    to {
-      transform: scale(1.1);
-    }
-  }
-  .header-li {
-    list-style: none;
-    color: #ffffff;
-    cursor: pointer;
-    font-size: 19px;
-    transition: 0.5s;
-  }
-  
-  .header-li:hover {
-    color: $red-dark;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .header-ul {
-      width: 100%;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-    }
-    .header-logo {
-      width: 100px;
-      margin-top: 46px;
-    }
-   
-  }
-  
-  
- 
-  
-  a {
-    cursor: pointer;
-    text-decoration: none;
-  }/*# sourceMappingURL=style.css.map */
-  
-    
-   
+}
 
+.header-logo {
+  width: 150px;
+  border-radius: 30px;
+  margin-top: 40px;
+  margin-left: 40px;
+  transition: 0.8s;
+}
 
+.header-nav {
+  width: 100%;
+}
+
+.header-ul {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 100px;
+  align-items: center;
+}
+
+.header-ul:hover {
+  animation: scaleButton 0.8s alternate infinite;
+}
+
+@keyframes scaleButton {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+.header-li {
+  list-style: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 19px;
+  transition: 0.5s;
+}
+
+.header-li:hover {
+  color: $red-dark;
+}
+
+@media screen and (max-width: 768px) {
+  .header-ul {
+    flex-direction: column;
+    margin-bottom: 35px;
+    text-align: center;
+    gap: 10px;
+  }
+  .header-logo {
+    width: 100px;
+    margin-top: 46px;
+  }
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+} /*# sourceMappingURL=style.css.map */
